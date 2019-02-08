@@ -1,7 +1,8 @@
 function intervalTimerSameThingInMyCase()
 {
-    console.log(fourthOfASecondCounter);
-
+    // console.log(fourthOfASecondCounter);
+    fourthOfASecondCounter++;
+    $("h2").text(fourthOfASecondCounter);
 }
 
 var intervalID = setInterval(intervalTimerSameThingInMyCase, 250);
