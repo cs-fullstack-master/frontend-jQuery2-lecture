@@ -14,13 +14,13 @@ function intervalTimerSameThingInMyCase()
     // $("h2").text(minutesForH2+ "m:" + secondsForH2+ "secs");
     $("h2").text(fourthOfASecondCounter);
 
-    if(fourthOfASecondCounter > 20)
+    if(fourthOfASecondCounter >= 20)
     {
         clearInterval(intervalID);
     }
 }
 
-var intervalID = setInterval(intervalTimerSameThingInMyCase, 250);
+var intervalID = setInterval(intervalTimerSameThingInMyCase, 62.5);
 var fourthOfASecondCounter = 0;
 // var secondsForH2 = 0;
 // var minutesForH2 = 0;
