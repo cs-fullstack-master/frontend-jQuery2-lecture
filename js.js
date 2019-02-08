@@ -4,8 +4,17 @@ console.log( $("p:first").text());
 console.log( $("#first").text());
 console.log( $(".special:first").text() );
 
-$("p:first").addClass("turnRed");
+// $("p:first").addClass("turnRed");
+$("p:first").attr("class", "turnRed");
 
+console.log($("p:first").css("color"));
+
+$("p").each(eachFunction);
+
+function eachFunction(index, value)
+{
+    console.log(value)
+}
 
 
 /* Print the special class using both the query selector and query all selector. */
