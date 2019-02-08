@@ -1,6 +1,9 @@
 /* Print the first p tag to the console using the ID,
 class, and tag selectors. */
-console.log( $("#first") );
+console.log( $("p:first").text());
+console.log( $("#first").text());
+console.log( $(".special:first").text() );
+
 
 /* Print the special class using both the query selector and query all selector. */
 
