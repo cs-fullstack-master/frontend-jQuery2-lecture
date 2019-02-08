@@ -1,3 +1,4 @@
+// Exercise 2a
 $("#b1").click(function(){
     // console.log("Test")
     if(button1) {
@@ -15,3 +16,22 @@ $("#b1").click(function(){
 
 
 var button1 = true;
+var buttonChangeVariable = "";
+var buttonColorChange = ["blue", "red", "yellow", "brown", "orange", "purple", "black", "green"];
+var buttonColorCounter = 0;
+
+// Exercise 2b
+$("#b2").click(function (){
+    buttonChangeVariable = prompt("What should the secret message be this time?");
+    $("h1").text(buttonChangeVariable);
+});
+
+// Exercise 2c
+$("#b3").click(function(){
+    $("h1").css("color",buttonColorChange[buttonColorCounter]);
+    buttonColorCounter++;
+    if(buttonColorCounter>=buttonColorChange.length)
+    {
+        buttonColorCounter=0;
+    }
+})
