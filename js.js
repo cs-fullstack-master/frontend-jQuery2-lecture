@@ -13,11 +13,16 @@ $("p").each(eachFunction);
 
 function eachFunction(index, value)
 {
-    console.log(value)
+    value.addEventListener('click', clickFunction)
 }
 
+function clickFunction(e)
+{
+    alert(e.target.innerText);
+}
 
-/* Print the special class using both the query selector and query all selector. */
+$("body").append("<h1>Test</h1>");
+
 
 
 /* Change the color of the h1 statement to blue. */
