@@ -4,6 +4,9 @@ console.log( $("p:first").text());
 console.log( $("#first").text());
 console.log( $(".special:first").text() );
 
+$("p:first").addClass("turnRed");
+
+
 
 /* Print the special class using both the query selector and query all selector. */
 
